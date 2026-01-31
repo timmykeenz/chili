@@ -78,8 +78,8 @@ function initSpiceMeter() {
     const spiceMessages = [
         "Warming up... 🌡️",
         "Getting toasty... 🔥",
-        "Entering danger zone... ⚠️",
-        "MAXIMUM SPICE ACHIEVED! 🌶️👻💀"
+        "Now we're cooking... ⚠️",
+        "TRANSFORMATIVE SPICE AMOUNTS ACQUIRED! 🌶️🦋✨"
     ];
     
     let isAnimating = false;
@@ -97,7 +97,7 @@ function initSpiceMeter() {
         
         // Animate the meter
         let progress = 0;
-        const targetProgress = 95;
+        const targetProgress = 85;
         const duration = 3000;
         const steps = 60;
         const increment = targetProgress / steps;
@@ -174,10 +174,10 @@ function initWaiverForm() {
             // Success!
             waiverResult.innerHTML = `
                 <div class="success">
-                    🎉 WAIVER SIGNED! 🎉<br>
+                    🎉 JOURNEY ACCEPTED! 🎉<br>
                     <span style="font-size: 1rem; font-family: 'Poppins', sans-serif;">
-                        ${name}, you are now legally allowed to experience transformation.<br>
-                        Good luck. You'll need it. 🔥
+                        ${name}, you are now ready to experience transformation.<br>
+                        Enjoy the ride! 🌶️✨
                     </span>
                 </div>
             `;
@@ -193,7 +193,7 @@ function initWaiverForm() {
             // Reset after delay
             setTimeout(() => {
                 signWaiverBtn.style.background = '';
-                signWaiverBtn.innerHTML = '<span class="btn-text">I Accept My Fate</span><span class="btn-icon">🔥</span>';
+                signWaiverBtn.innerHTML = '<span class="btn-text">I Accept My Journey</span><span class="btn-icon">🌶️</span>';
                 signWaiverBtn.disabled = false;
             }, 5000);
             
