@@ -95,7 +95,7 @@ ul {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--space-md);
+    padding: 0 var(--space-sm);
 }
 
 .section-title {
@@ -293,7 +293,7 @@ ul {
 .title-accent {
     display: block;
     font-family: var(--font-display);
-    font-size: clamp(3rem, 10vw, 8rem);
+    font-size: clamp(2.5rem, 8vw, 5.5rem);
     color: var(--color-fire-yellow);
     text-shadow: 
         4px 4px 0 var(--color-fire-orange),
@@ -1108,6 +1108,39 @@ ul {
 /* ========================================
    RESPONSIVE DESIGN
 ======================================== */
+
+/* Large tablets and small desktops */
+@media (min-width: 769px) {
+    .container {
+        padding: 0 var(--space-md);
+    }
+}
+
+/* iPad Pro and larger tablets (1024px) */
+@media (max-width: 1024px) {
+    .hero-content {
+        max-width: 95%;
+        padding: 0 var(--space-sm);
+    }
+    
+    .story-grid {
+        gap: var(--space-md);
+    }
+    
+    .ingredients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .faq-container {
+        max-width: 95%;
+    }
+    
+    .spice-comparison {
+        max-width: 95%;
+    }
+}
+
+/* iPad and smaller tablets (968px) */
 @media (max-width: 968px) {
     .story-grid {
         grid-template-columns: 1fr;
@@ -1125,9 +1158,18 @@ ul {
         height: 300px;
         order: -1;
     }
+    
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* iPad Mini and large phones (768px) */
 @media (max-width: 768px) {
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
     .nav-links {
         display: none;
         position: absolute;
@@ -1148,9 +1190,45 @@ ul {
         display: block;
     }
     
+    .hero {
+        padding: var(--space-md);
+    }
+    
+    .hero-content {
+        max-width: 100%;
+    }
+    
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .warning-banner {
+        margin: var(--space-sm) 0;
+        padding: var(--space-sm);
+    }
+    
+    .section-title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+    
+    .ingredients-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-sm);
+    }
+    
+    .ingredient-card {
+        padding: var(--space-sm);
+    }
+    
+    .story-image img {
+        height: 250px;
     }
     
     .comparison-item {
@@ -1161,12 +1239,37 @@ ul {
     
     .comparison-bar {
         width: 100% !important;
-        max-width: 300px;
+        max-width: 100%;
         margin: 0 auto;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .waiver-content {
+        padding: var(--space-md);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 }
 
+/* iPhone and small phones (480px) */
 @media (max-width: 480px) {
+    :root {
+        --space-sm: 0.75rem;
+        --space-md: 1.25rem;
+        --space-lg: 2.5rem;
+        --space-xl: 4rem;
+    }
+    
+    .container {
+        padding: 0 var(--space-sm);
+    }
+    
     .warning-content {
         flex-direction: column;
         gap: var(--space-xs);
@@ -1176,12 +1279,122 @@ ul {
         display: none;
     }
     
-    .section-title {
-        font-size: 2rem;
+    .warning-text {
+        font-size: 0.9rem;
     }
     
-    .ingredients-grid {
-        grid-template-columns: 1fr;
+    .hero {
+        padding: var(--space-sm);
+    }
+    
+    .title-line {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+    
+    .title-accent {
+        font-size: 2.2rem;
+        text-shadow: 
+            2px 2px 0 var(--color-fire-orange),
+            4px 4px 0 var(--color-fire-red);
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .story-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .story-content p {
+        font-size: 1rem;
+    }
+    
+    .story-content .quote {
+        font-size: 1.2rem;
+    }
+    
+    .ingredient-icon {
+        font-size: 3rem;
+    }
+    
+    .ingredient-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .faq-question {
+        padding: var(--space-sm);
+        font-size: 1rem;
+    }
+    
+    .faq-item.active .faq-answer {
+        padding: 0 var(--space-sm) var(--space-sm);
+    }
+    
+    .waiver-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .waiver-text {
+        padding: var(--space-sm);
+    }
+    
+    .waiver-text li {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-waiver {
+        padding: 14px 28px;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content p {
+        font-size: 1rem;
+    }
+    
+    .cta-price {
+        font-size: 1.2rem;
+    }
+    
+    .meter-labels {
+        font-size: 0.75rem;
+    }
+    
+    .meter-labels .hospital-icon {
+        font-size: 1.4rem;
+    }
+    
+    .spice-comparison h3 {
+        font-size: 1.2rem;
+    }
+    
+    .testimonial-card {
+        padding: var(--space-sm);
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
     }
 }
 
