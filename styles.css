@@ -1117,10 +1117,19 @@ ul {
 }
 
 /* iPad Pro and larger tablets (1024px) */
+/* iPad Pro and larger tablets (1024px) */
 @media (max-width: 1024px) {
     .hero-content {
         max-width: 95%;
         padding: 0 var(--space-sm);
+    }
+    
+    .hero {
+        padding-bottom: var(--space-xl);
+    }
+    
+    .scroll-indicator {
+        bottom: .5em;
     }
     
     .story-grid {
