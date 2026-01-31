@@ -1,4 +1,4 @@
-# 🌶️ Timmy's Revenge Chili
+# 🌶️ The Mystery Chili
 
 > A website as bold as the chili itself.
 
@@ -6,7 +6,7 @@
 
 ## 🔥 About
 
-This is the official promotional website for Timmy's Revenge Chili, competing in the 2026 Crosstown Chili Cook-Off. Born from the ashes of a 2023 near-victory (and Nicole's criticism), this chili represents a year-long journey of culinary obsession, Hot Ones appearances, and MasterChef dreams.
+This is the official promotional website for The Mystery Chili, competing in the 2026 Crosstown Chili Cook-Off. Born from the ashes of a 2023 near-victory, this chili represents a year-long journey of culinary obsession and flavor perfection. Who made it? That's part of the mystery...
 
 ## 🚀 Deploy to GitHub Pages
 
@@ -43,7 +43,7 @@ chili/
 - 🔥 **Sticky Warning Banner** - Gluten & extreme spice alerts
 - 📖 **Origin Story** - The tale of 2023 and the quest for revenge
 - 🥓 **Secret Ingredients** - Beer, bacon, apple cider vinegar & ghost pepper
-- 📊 **Interactive Spice Meter** - Click to see where Timmy's chili ranks
+- 📊 **Interactive Spice Meter** - Click to see where the Mystery Chili ranks
 - ❓ **Collapsible FAQ** - Fun facts with animated reveals
 - ✍️ **Waiver Signing** - Interactive "sign your fate" feature
 - 🎊 **Confetti & Fire Rain** - Celebration animations
@@ -69,7 +69,7 @@ chili/
 
 ## ⚠️ Disclaimer
 
-This dish is extremely hot. Timmy is not responsible for any mental or physical damage that may occur. Good luck, have fun, and enjoy the transformation :)
+This dish has some heat to it — approach with enthusiasm and maybe a beverage nearby. Good luck, have fun, and enjoy the transformation :)
 
 ---
 

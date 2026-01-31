@@ -1,5 +1,5 @@
 /**
- * Timmy's Revenge Chili - Interactive Website
+ * The Mystery Chili - Interactive Website
  * Because regular chili websites are too mild
  */
 
@@ -410,7 +410,7 @@ function activateEasterEgg() {
         box-shadow: 0 0 50px rgba(230, 57, 70, 0.8);
         animation: pop-in 0.5s ease-out;
     `;
-    message.innerHTML = '🎮 SECRET UNLOCKED! 🎮<br><span style="font-size: 1rem; font-family: Poppins, sans-serif;">Timmy approves of your gaming skills!<br>Enjoy a 0% discount! 🔥</span>';
+    message.innerHTML = '🎮 SECRET UNLOCKED! 🎮<br><span style="font-size: 1rem; font-family: Poppins, sans-serif;">The mysterious chef approves of your gaming skills!<br>Enjoy a 0% discount! 🔥</span>';
     
     const popStyle = document.createElement('style');
     popStyle.textContent = `
@@ -438,13 +438,13 @@ function activateEasterEgg() {
 
 // Console easter egg for developers
 console.log(`
-🌶️🔥 TIMMY'S REVENGE CHILI 🔥🌶️
+🌶️🔥 THE MYSTERY CHILI 🔥🌶️
 ================================
 Looking at the code, huh?
-Just like Timmy looked at hot sauce formulas for a year.
+Just like the chef looked at hot sauce formulas for a year.
 
-Fun fact: The spice meter goes to 95% because
-even Timmy isn't crazy enough to go full 100%.
+Fun fact: The spice meter goes to 85% because
+even this mysterious chef isn't crazy enough to go full 100%.
 
 Try the Konami Code for a surprise! 
 ↑↑↓↓←→←→BA
